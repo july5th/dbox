@@ -1,0 +1,9 @@
+创建数据库:
+  CREATE DATABASE `dbox` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+  ruby ./create_database.rb
+
+运行:
+  rvmsudo ruby ./dbox.rb
+
+......
+

@@ -1,0 +1,30 @@
+docker_image_name: dbox
+
+apk_base_dir: ~/file
+
+docker_dir: ~/test
+
+output_file_list: ['analysis.json']
+
+batch_number: 1
+
+analisys_number: 100
+
+sleep_time_after_start: 120
+
+delete_tmp_apk: true
+
+redis:
+    :host: 127.0.0.1
+    :port: 6379
+    :password: 
+
+database:
+    :adapter: mysql2
+    :encoding: utf8
+    :database: dbox
+    :pool: 5
+    :username: root
+    :password: 
+    :host: localhost
+

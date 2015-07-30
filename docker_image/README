@@ -1,0 +1,8 @@
+BUILD:
+  sudo docker build -t dbox .
+
+START:
+  sudo docker run -it --rm -v /home/ruin/git/sendbox/lbox/test:/samples --name=test dbox
+
+RUN APK:
+  sudo ./docker_enter test /build/run_apk.sh /samples/test.apk 120
